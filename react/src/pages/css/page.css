@@ -1,0 +1,35 @@
+.internet-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+
+.internet-img:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.internet-img-box {
+  margin-right: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.mbti-btn {
+  background-color: #eee6c4;
+  color: #eee6c4;
+  width: 120px;
+  height: 40px;
+  border: none;
+  font-family: "Shantell Sans", cursive;
+}
+
+.mbti-btn:hover {
+  color: #6a8518;
+  font-size: 30px;
+  cursor: pointer;
+}

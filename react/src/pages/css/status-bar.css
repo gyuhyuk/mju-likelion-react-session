@@ -1,0 +1,36 @@
+.status-bar {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  background-color: orange;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  box-shadow: 0px 20px 10px rgb(250, 198, 114);
+  justify-content: space-between;
+}
+
+.status-bar > div {
+  margin-left: 30px;
+}
+
+.button-box {
+  display: flex;
+}
+
+.btn {
+  border: none;
+  background-color: orange;
+  font-family: "Shantell Sans", cursive;
+  font-size: 20px;
+}
+
+.button {
+  margin-right: 30px;
+}
+
+.button:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+}
