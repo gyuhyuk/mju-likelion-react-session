@@ -1,0 +1,27 @@
+.container {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-h1 {
+  margin-bottom: -0.1em;
+}
+
+.first-container,
+.second-container {
+  color: #808000;
+  white-space: pre-wrap;
+}
+
+.second-container > div {
+  font-family: "Stylish", sans-serif;
+  font-size: 20px;
+}
+
+.third-container,
+.fourth-container {
+  color: #6a8518;
+  white-space: pre-wrap;
+}

@@ -4,10 +4,10 @@ const HobbyList = (props) => {
   const { hobby } = props.data;
   return (
     <>
-      <h3>HOBBY</h3>
-      <div className="wrapHobby">
+      <div className="second-container">
+        <h1 className="header-h1">Hobby</h1>
         {hobby.map((data, index) => (
-          <Hobby data={data} key={index} isdark={props.dark} />
+          <Hobby data={data} key={index} />
         ))}
       </div>
     </>
