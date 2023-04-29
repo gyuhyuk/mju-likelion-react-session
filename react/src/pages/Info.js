@@ -1,7 +1,9 @@
 import img from "../img/profile.jpeg";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 const Info = (props) => {
+  const { isDark } = useContext(ThemeContext);
   const { name, birthday, phone, email } = props.data;
   const [count, setCount] = useState(localStorage.getItem("count"));
   const total = Number(count);
@@ -22,19 +24,30 @@ const Info = (props) => {
     <>
       <div className="profile-img-box">
         <img className="profile-img" src={img} alt="사진" />
-        <h2>{name}</h2>
-        <div className="profile-img-text">
+        <h2 className={isDark ? "profile-name-darkMode" : ""}>{name}</h2>
+        <div
+          className={isDark ? "profile-img-text-darkMode" : "profile-img-text"}
+        >
           <p className="profile-img-text-p">{birthday}</p>
           <p className="profile-img-text-p">{phone}</p>
           <p className="profile-img-text-p">{email}</p>
           <p>{emoticon}</p>
-          <button onClick={Good} className="profile-btn">
+          <button
+            onClick={Good}
+            className={isDark ? "profile-btn-darkMode" : "profile-btn"}
+          >
             like😍
           </button>
-          <button onClick={Bad} className="profile-btn">
+          <button
+            onClick={Bad}
+            className={isDark ? "profile-btn-darkMode" : "profile-btn"}
+          >
             dislike😂
           </button>
-          <button onClick={reset} className="profile-btn">
+          <button
+            onClick={reset}
+            className={isDark ? "profile-btn-darkMode" : "profile-btn"}
+          >
             reset!
           </button>
         </div>

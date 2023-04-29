@@ -1,14 +1,32 @@
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import More from "./pages/More";
+import { UserInfo } from "./pages/UserInfo";
+import Login from "./pages/Login";
+import { useState, useEffect } from "react";
+import { ThemeContext } from "./pages/ThemeContext";
 
 function App() {
+  const [isDark, setIsDark] = useState(false);
+  const [isLogin, setIsLogin] = useState(false);
+  console.log(isLogin);
+  useEffect(() => {
+    localStorage.setItem("id", UserInfo.id);
+    localStorage.setItem("password", UserInfo.password);
+  }, []);
+
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/more" element={<More />} />
-      </Routes>
+      <ThemeContext.Provider value={{ isDark, setIsDark }}>
+        <Routes>
+          <Route
+            path="/"
+            element={isLogin ? <Home /> : <Login check={setIsLogin} />}
+          />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/more" element={<More />} />
+        </Routes>
+      </ThemeContext.Provider>
     </>
   );
 }

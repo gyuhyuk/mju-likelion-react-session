@@ -6,17 +6,20 @@ import HobbyList from "./HobbyList";
 import Mbti from "./Mbti";
 import Hidden from "./Hidden";
 import "../Main.css";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 const More = () => {
+  const { isDark } = useContext(ThemeContext);
   return (
     <>
-      <Header data={Data} />
-      <div className="profile">
+      <Header data={Data.header} />
+      <div className={isDark ? "profile-darkMode" : "profile"}>
         <Info data={Data} />
         <div className="container">
-          <Motive data={Data} />
-          <HobbyList data={Data} />
-          <Mbti data={Data} />
+          <Motive data={Data.motive} />
+          <HobbyList data={Data.hobby} />
+          <Mbti data={Data.mbti} />
           <Hidden data={Data} />
         </div>
       </div>
