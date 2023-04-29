@@ -1,11 +1,11 @@
-import Data from "./Data.json";
-import Header from "./Header";
-import Info from "./Info";
+import Data from "../Data.json";
+import Info from "../components/Info";
 import Motive from "./Motive";
-import HobbyList from "./HobbyList";
+import HobbyList from "./Hobby/HobbyList";
 import Mbti from "./Mbti";
 import Hidden from "./Hidden";
-import "../Main.css";
+import Header from "../components/Header";
+import "../../Main.css";
 
 const More = () => {
   return (

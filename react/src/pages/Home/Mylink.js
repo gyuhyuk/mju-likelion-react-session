@@ -1,6 +1,6 @@
-import instagram from "../img/instagram.jpeg";
-import github from "../img/github.jpeg";
-import blog from "../img/blog.jpeg";
+import instagram from "../../img/instagram.jpeg";
+import github from "../../img/github.jpeg";
+import blog from "../../img/blog.jpeg";
 
 const Mylink = (props) => {
   const { instagramLink, githubLink, naverLink } = props.data;
