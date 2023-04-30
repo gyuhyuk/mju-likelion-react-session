@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Button from "./Button";
-import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "../ThemeContext";
 
 const Header = (props) => {
   const { isDark, setIsDark } = useContext(ThemeContext);

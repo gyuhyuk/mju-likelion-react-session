@@ -1,6 +1,6 @@
-import img from "../img/profile.jpeg";
+import img from "../../img/profile.jpeg";
 import { useContext, useState } from "react";
-import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "../ThemeContext";
 
 const Info = (props) => {
   const { isDark } = useContext(ThemeContext);
@@ -31,7 +31,7 @@ const Info = (props) => {
           <p className="profile-img-text-p">{birthday}</p>
           <p className="profile-img-text-p">{phone}</p>
           <p className="profile-img-text-p">{email}</p>
-          <p>{emoticon}</p>
+          <div>{emoticon}</div>
           <button
             onClick={Good}
             className={isDark ? "profile-btn-darkMode" : "profile-btn"}

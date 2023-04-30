@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Hobby from "./Hobby";
-import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "../../ThemeContext";
 
 const HobbyList = (props) => {
   const { isDark } = useContext(ThemeContext);

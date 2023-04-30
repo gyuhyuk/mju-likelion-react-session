@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "../ThemeContext";
 
 const Mbti = (props) => {
   const { isDark } = useContext(ThemeContext);

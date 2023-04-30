@@ -1,13 +1,13 @@
-import Data from "./Data.json";
-import Header from "./Header";
-import Info from "./Info";
+import Data from "../Data.json";
+import Header from "../components/Header";
+import Info from "../components/Info";
 import Motive from "./Motive";
-import HobbyList from "./HobbyList";
+import HobbyList from "./Hobby/HobbyList";
 import Mbti from "./Mbti";
 import Hidden from "./Hidden";
-import "../Main.css";
+import "../../Main.css";
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "../ThemeContext";
 
 const More = () => {
   const { isDark } = useContext(ThemeContext);

@@ -1,13 +1,13 @@
-import Data from "./Data.json";
-import Header from "./Header";
-import Info from "./Info";
+import Data from "../Data.json";
+import Header from "../components/Header";
+import Info from "../components/Info";
 import About from "./About";
-import Detail from "./Detail";
 import Capability from "./Capability";
+import Detail from "./Detail";
 import Mylink from "./Mylink";
-import "../Main.css";
+import "../../Main.css";
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "../ThemeContext";
 
 const Home = () => {
   const { isDark } = useContext(ThemeContext);
