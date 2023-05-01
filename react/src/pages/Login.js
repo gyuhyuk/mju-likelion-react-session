@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Login = ({ check }) => {
   const [id, setId] = useState("");
@@ -6,6 +6,7 @@ const Login = ({ check }) => {
 
   const idChange = (event) => {
     setId(event.target.value);
+    console.log(event);
   };
 
   const passChange = (event) => {
