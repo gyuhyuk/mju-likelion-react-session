@@ -15,13 +15,18 @@
   white-space: pre-wrap;
 }
 
-.second-container > div {
+/* .second-container > div {
   font-family: "Stylish", sans-serif;
   font-size: 20px;
-}
+} */
 
 .third-container,
 .fourth-container {
   color: #6a8518;
+  white-space: pre-wrap;
+}
+
+.container-darkMode {
+  color: white;
   white-space: pre-wrap;
 }

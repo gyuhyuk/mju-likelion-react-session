@@ -33,3 +33,18 @@
   font-size: 30px;
   cursor: pointer;
 }
+
+.mbti-btn-darkMode {
+  background-color: black;
+  color: black;
+  width: 120px;
+  height: 40px;
+  border: none;
+  font-family: "Shantell Sans", cursive;
+}
+
+.mbti-btn-darkMode:hover {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}

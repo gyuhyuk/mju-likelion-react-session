@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import { ThemeContext } from "../ThemeContext";
+
 const About = (props) => {
-  const { aboutMe } = props.data;
+  const { isDark } = useContext(ThemeContext);
+  const aboutMe = props.data;
   return (
     <>
-      <div className="first-container ">
+      <div className={isDark ? "container-darkMode" : "first-container"}>
         <h1 className="header-h1">About Me</h1>
         <p className="korean">{aboutMe}</p>
       </div>

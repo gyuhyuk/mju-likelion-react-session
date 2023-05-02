@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   justify-content: space-around;
+  background-color: #eee6c4;
 }
 
 .profile-img {
@@ -50,4 +51,45 @@
   cursor: pointer;
   transition: 0.5s ease-in-out;
   transform: scale(1.2);
+}
+
+.profile-name-darkMode {
+  color: white;
+}
+
+.profile-darkMode {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.profile-btn-darkMode {
+  background-color: black;
+  border: none;
+  margin-bottom: 5px;
+  font-family: "Shantell Sans", cursive;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.profile-img-text-darkMode > p {
+  margin-bottom: 0px;
+  line-height: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-btn-darkMode:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+
+.profile-img-text-darkMode {
+  display: flex;
+  flex-direction: column;
+  color: white;
 }

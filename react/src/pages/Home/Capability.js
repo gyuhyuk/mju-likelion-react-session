@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import { ThemeContext } from "../ThemeContext";
+
 const Capability = (props) => {
-  const { capability } = props.data;
+  const { isDark } = useContext(ThemeContext);
+  const capability = props.data;
   return (
     <>
-      <div className="third-container">
+      <div className={isDark ? "container-darkMode" : "third-container"}>
         <h1 className="header-h1">basic Capability</h1>
         <p>{capability}</p>
       </div>
