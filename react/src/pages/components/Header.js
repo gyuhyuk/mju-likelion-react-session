@@ -1,8 +1,7 @@
 import Button from "./Button";
 
 const Header = (props) => {
-  const { header } = props.data;
-
+  const header = props.data;
   return (
     <>
       <div className="status-bar">
