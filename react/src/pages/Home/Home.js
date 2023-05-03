@@ -1,8 +1,8 @@
+import Data from "../Data.json";
+import Info from "../components/Info";
 import About from "./About";
 import Capability from "./Capability";
 import Detail from "./Detail";
-import Data from "../Data.json";
-import Info from "../components/Info";
 import Mylink from "./Mylink";
 import "../../Main.css";
 import { useContext } from "react";
