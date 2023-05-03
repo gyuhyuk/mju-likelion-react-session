@@ -6,7 +6,6 @@ const Hidden = (props) => {
   const { answer } = props.data;
   return (
     <>
-      {" "}
       <button className={isDark ? "mbti-btn-darkMode" : "mbti-btn"}>
         {answer}
       </button>
