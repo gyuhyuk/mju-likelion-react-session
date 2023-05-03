@@ -78,3 +78,7 @@
   cursor: pointer;
   font-family: "Shantell Sans", cursive;
 }
+
+.status-bar-hidden {
+  visibility: hidden;
+}

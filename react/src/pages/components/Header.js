@@ -7,9 +7,10 @@ const Header = (props) => {
   const ThemeToggle = () => {
     setIsDark(!isDark);
   };
+
   const header = props.data;
   return (
-    <>
+    <div className={props.hide ? "" : "status-bar-hidden"}>
       <div className={isDark ? "status-bar-darkMode" : "status-bar"}>
         <div>
           {header}
@@ -27,7 +28,7 @@ const Header = (props) => {
           <Button text="More" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

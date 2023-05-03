@@ -10,7 +10,6 @@ import { ThemeContext } from "./pages/ThemeContext";
 function App() {
   const [isDark, setIsDark] = useState(false);
   const [isLogin, setIsLogin] = useState(false);
-  console.log(isLogin);
   useEffect(() => {
     localStorage.setItem("id", UserInfo.id);
     localStorage.setItem("password", UserInfo.password);
@@ -19,8 +18,7 @@ function App() {
   return (
     <>
       <ThemeContext.Provider value={{ isDark, setIsDark }}>
-        <Header data="MJU LikeLion" />
-
+        <Header data="MJU LikeLion" hide={isLogin} />
         <Routes>
           <Route
             path="/"
