@@ -1,4 +1,4 @@
-.wrapper_box {
+.wrapper-box {
   margin: 150px auto;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
   color: #7ac142;
 }
 
-.login_form {
+.login-form {
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.login_input {
+.login-input {
   width: 300px;
   height: 50px;
   border: none;
@@ -22,11 +22,11 @@
   outline: none;
 }
 
-.login_input:focus {
+.login-input:focus {
   border-bottom: 1px solid #7ac142;
 }
 
-.login_btn {
+.login-btn {
   width: 120px;
   height: 30px;
   text-align: center;

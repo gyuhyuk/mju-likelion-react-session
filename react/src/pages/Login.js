@@ -25,22 +25,22 @@ const Login = ({ check }) => {
   };
 
   return (
-    <div className="wrapper_box">
+    <div className="wrapper-box">
       <h2>LOG IN</h2>
-      <form onSubmit={handleLogin} className="login_form">
+      <form onSubmit={handleLogin} className="login-form">
         <input
           type="text"
-          className="login_input"
+          className="login-input"
           placeholder="ID"
           onChange={idChange}
         />
         <input
           placeholder="Password"
           type="Password"
-          className="login_input"
+          className="login-input"
           onChange={passChange}
         />
-        <button type="submit" className="login_btn">
+        <button type="submit" className="login-btn">
           Login
         </button>
       </form>

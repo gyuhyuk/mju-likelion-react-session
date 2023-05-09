@@ -15,7 +15,7 @@ const Header = (props) => {
         <div>
           {header}
           <button
-            className={isDark ? "toggleBtn-darkMode" : "toggleBtn"}
+            className={isDark ? "toggleBtn-darkMode" : "toggle-Btn"}
             onClick={ThemeToggle}
           >
             {isDark
